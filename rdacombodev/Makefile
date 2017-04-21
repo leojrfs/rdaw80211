@@ -16,7 +16,7 @@
 # CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
 subdir-ccflags-y := -Werror
-subdir-ccflags-y += -I$(ANDROID_BUILD_TOP)/$(RDA_TARGET_DEVICE_DIR)/include
+subdir-ccflags-y += -Iinclude_rda
 
 MODULEPFX := rdacombodev
 
