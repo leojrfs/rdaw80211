@@ -117,14 +117,6 @@ int wland_bus_start(struct device *dev)
 			WLAND_ERR("nvram:get an invalid ether addr\n");
 		}
 	}
-#elif defined(WLAND_MACADDR_DYNAMIC)
-	if (wland_get_mac_address(mac_addr) != ETH_ALEN) {
-		random_ether_addr(mac_addr);
-		if (wland_set_mac_address(mac_addr) < 0) {
-			WLAND_ERR("set cur_etheraddr failed!\n");
-			return -ENODEV;
-		}
-	}
 #else
 	for (i = 0; i < 6; i++) {
 		if (macaddr[i] != 0)

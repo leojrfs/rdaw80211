@@ -852,8 +852,6 @@ extern int rda_wifi_power_off(void);
 extern void wland_registration_sem_up(bool check_flag);
 
 /* read/store mac address by file */
-extern int wland_get_mac_address(char *buf);
-extern int wland_set_mac_address(char *buf);
 int wlan_read_mac_from_nvram(char *buf);
 int wlan_write_mac_to_nvram(const char *buf);
 
