@@ -150,10 +150,6 @@ static const u16 wf_rf_setting_5991g[][2] = {
 };
 #endif
 
-static const u16 wf_agc_setting_for_dccal_5991g[][2] = {
-
-};
-
 static const u16 wf_agc_setting_5991g[][2] = {
 	{0x3F,  0x0000},
 #ifdef G_CHINA_VERSION
@@ -307,7 +303,6 @@ static const u16 rda_5991g_bt_force_swtrx[][2] =
 #endif
 	{0x3f, 0x0000 },
 };
-// add for pta
 
 // add for pta
 static const u16 rda_5991g_bt_no_force_swtrx[][2] =
@@ -319,16 +314,6 @@ static const u16 rda_5991g_bt_no_force_swtrx[][2] =
 	{0x2e, 0x8aa3 },  //force gain level to 7 before lna issue fixed
 #endif
 	{0x3f, 0x0000 },
-};
-// add for pta
-
-
-
-static const u16  bt_dc_cal_5991g[][2] = {
-	{0x3F,  0x0000},
-	{0x30,  0x0140},
-	{0x30,  0x0141},
-	 DELAY_MS(50)
 };
 #endif
 
@@ -888,4 +873,3 @@ err:
 	printk(KERN_INFO "***rda_fm_power_off failed! \n");
 	return -1;
 }
-

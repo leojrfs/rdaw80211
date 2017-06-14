@@ -35,18 +35,6 @@
 #include <wland_p2p.h>
 #include <wland_cfg80211.h>
 
-/** wland_fws_prio2fifo - mapping from 802.1d priority to firmware fifo index. */
-static const int wland_fws_prio2fifo[] = {
-	WLAND_FWS_FIFO_AC_BE,
-	WLAND_FWS_FIFO_AC_BK,
-	WLAND_FWS_FIFO_AC_BK,
-	WLAND_FWS_FIFO_AC_BE,
-	WLAND_FWS_FIFO_AC_VI,
-	WLAND_FWS_FIFO_AC_VI,
-	WLAND_FWS_FIFO_AC_VO,
-	WLAND_FWS_FIFO_AC_VO
-};
-
 #if 0
 static u32 fws_hanger_get_free_slot(struct wland_fws_hanger *h)
 {
